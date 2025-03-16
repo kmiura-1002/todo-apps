@@ -25,8 +25,28 @@ servers:
   - url: 'http://localhost:8004'
 
 tags:
+  - hello-world
 
 paths:
-
+  /hello-world:
+    get:
+      tags:
+        - hello-world
+      summary: hello world
+      description: hello world
+      operationId: sayHello
+      responses:
+        "200":
+          description: sayHello
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HelloWorldDto'
 components:
-
+  schemas:
+    HelloWorldDto:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Hello World"
