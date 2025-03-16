@@ -1,0 +1,32 @@
+#  | フィールド名	      | 必須	 | 概要                                     |
+#  |--------------|-----|----------------------------------------|
+#  | openapi      | o   | openapiのバージョンを記述                       |
+#  | info         | o   | APIのメタデータを記述                           |
+#  | servers      | x   | APIを提供するサーバーを記述。配列で複数記述可能(STG, PROD等) |
+#  | paths        | o   | エンドポイントやメソッドを記述                        |
+#  | components   | o   | APIで使用するオブジェクトスキーマを記述                  |
+#  | security     | x   | APIのセキュリティ仕様を記述                        |
+#  | tags         | x   | APIで使用されるタグのリストを記述                     |
+#  | externalDocs | x   | 外部ドキュメントを記述                            |
+openapi: 3.0.3
+
+info:
+  version: 1.0.0
+  title: Sample API
+  description: >-
+    A sample API that uses a sample-site as an example to demonstrate features in
+    the OpenAPI 3.0 specification.
+
+externalDocs:
+  description: "Find out more about OpenAPI"
+  url: "https://learn.openapis.org/"
+
+servers:
+  - url: 'http://localhost:8004'
+
+tags:
+
+paths:
+
+components:
+
