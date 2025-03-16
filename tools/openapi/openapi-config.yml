@@ -1,1 +1,11 @@
 # see https://openapi-generator.tech/docs/generators/kotlin-spring/#global-feature
+
+globalProperties:
+    apis: ""
+    models: ""
+additionalProperties:
+    enumPropertyNaming: UPPERCASE
+    interfaceOnly: true
+    useTags: true
+    documentationProvider: none
+    useSpringBoot3: true
